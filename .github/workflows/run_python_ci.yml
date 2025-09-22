@@ -26,8 +26,8 @@ jobs:
           version: 0.8.19
 
       - name: Sync dependencies
-        run: uv sync --dev
+        run: uv sync --frozen --dev
         working-directory: .devcontainer/python
 
       - name: Run ruff
-        run: uv run ruff check .
+        run: uv run ruff check
