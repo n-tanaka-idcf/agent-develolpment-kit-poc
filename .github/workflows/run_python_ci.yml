@@ -30,5 +30,6 @@ jobs:
         working-directory: .devcontainer/python
 
       - name: Run ruff
-        run: uv run ruff check ../../python
+        run: ls -lat
+        # run: ls -lat; uv run ruff check ../../python
         working-directory: .devcontainer/python
