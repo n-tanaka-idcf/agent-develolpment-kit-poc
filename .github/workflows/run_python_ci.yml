@@ -28,4 +28,4 @@ jobs:
         working-directory: .devcontainer/python
 
       - name: Run ruff
-        run: uv run ruff check .
+        run: pwd; uv run ruff check .
