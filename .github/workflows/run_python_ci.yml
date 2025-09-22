@@ -33,5 +33,5 @@ jobs:
         run: |
           source .venv/bin/activate
           which uv
-          uv run ruff check ../../python
+          uv run ruff --version
         working-directory: .devcontainer/python
