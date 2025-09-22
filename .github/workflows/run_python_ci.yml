@@ -30,8 +30,5 @@ jobs:
         working-directory: .devcontainer/python
 
       - name: Run ruff
-        run: |
-          source .venv/bin/activate
-          which uv
-          uv run ruff check ../../python/
+        run: uv run ruff check ../../python/
         working-directory: .devcontainer/python
